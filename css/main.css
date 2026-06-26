@@ -769,3 +769,125 @@ input[name="r"] {
         font-size: 14px;
     }
 }
+@media (max-width: 600px) {
+
+    /* ===== ОБЩИЕ МОБИЛЬНЫЕ ПРАВКИ ===== */
+
+    body {
+        font-size: 14px;
+    }
+
+    .yogurt {
+        font-size: 16px;
+    }
+
+    #first_part {
+        font-size: 20px;
+        margin-top: 110px;
+        padding: 0 15px;
+    }
+
+    .descriptionn {
+        font-size: 16px;
+        width: 90%;
+    }
+
+    .state_yogurt {
+        font-size: 30px;
+    }
+
+
+    /* ===== БЛОК ПОДДЕРЖКИ НА ГЛАВНОЙ ===== */
+
+    .block_about {
+        width: 95%;
+        min-height: auto;
+        padding: 25px 15px;
+        border-width: 8px;
+        border-radius: 30px;
+    }
+
+    .help {
+        font-size: 32px;
+    }
+
+    .donat {
+        font-size: 22px;
+    }
+
+    .final_picture {
+        width: 85%;
+    }
+
+    .donat_but {
+        width: 90%;
+        font-size: 24px;
+        padding: 14px 10px;
+    }
+
+
+    /* ===== СТРАНИЦА ПОДДЕРЖКИ ===== */
+
+    .support_page {
+        padding: 20px 10px;
+        align-items: flex-start;
+    }
+
+    .support_card {
+        width: 95%;
+        padding: 25px 15px;
+        border-width: 5px;
+        border-radius: 25px;
+    }
+
+    .support_card h1 {
+        font-size: 32px;
+    }
+
+    .support_text {
+        font-size: 18px;
+    }
+
+    .support_form input,
+    .support_form select,
+    .support_form textarea {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+
+    /* ===== СТРАНИЦА СРАВНЕНИЯ ===== */
+
+    .compare_page,
+    .comparison_page {
+        padding: 110px 10px 30px;
+    }
+
+    .compare_card,
+    .comparison_card {
+        width: 95%;
+        padding: 20px 10px;
+        border-radius: 25px;
+    }
+
+    .compare_card h1,
+    .comparison_card h1 {
+        font-size: 30px;
+    }
+
+    .compare_table,
+    .comparison_table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        font-size: 14px;
+    }
+
+    .compare_table th,
+    .compare_table td,
+    .comparison_table th,
+    .comparison_table td {
+        padding: 10px;
+        white-space: nowrap;
+    }
+}
