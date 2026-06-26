@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Сравнение йогуртов</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <header class="head">
+            <a href="indexx.html" class="logo">
+                <img src="unnamed.png" alt="">
+            </a>
+
+            <h1 class="yogurt">Alternative Identity of Yogurt</h1>
+
+            <nav class="head_menu">
+                <ul>
+                    <li><a href="indexx.html#first_part" id="main">Главная</a></li>
+                    <li><a href="indexx.html#second_part" id="about">О нас</a></li>
+                    <li><a href="indexx.html#third_part" id="contact">Контакты</a></li>
+                    <li><a href="compare.html" id="compare">Сравнение</a></li>
+                    <li><a href="game.html" id="game">Мини-игра</a></li>
+                </ul>
+            </nav>
+
+            <div class="burgerMenu">
+                <span></span>
+            </div>
+        </header>
+    </div>
+
+    <main class="compare_page">
+        <section class="compare_card">
+            <h1>Сравнение йогуртов</h1>
+
+            <p class="compare_text">
+                На этой странице можно сравнить разные виды йогуртов по калориям,
+                белку, сахару и жирности. Это помогает выбрать более полезный продукт.
+            </p>
+
+            <div class="table_box">
+                <table class="compare_table">
+                    <thead>
+                        <tr>
+                            <th>Вид йогурта</th>
+                            <th>Калории</th>
+                            <th>Белок</th>
+                            <th>Сахар</th>
+                            <th>Жирность</th>
+                            <th>Оценка</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Классический</td>
+                            <td>80 ккал</td>
+                            <td>4 г</td>
+                            <td>9 г</td>
+                            <td>2.5%</td>
+                            <td>Хорошо</td>
+                        </tr>
+
+                        <tr>
+                            <td>Фруктовый</td>
+                            <td>105 ккал</td>
+                            <td>3.5 г</td>
+                            <td>14 г</td>
+                            <td>2%</td>
+                            <td>Средне</td>
+                        </tr>
+
+                        <tr data-best="true">
+                            <td>Греческий</td>
+                            <td>70 ккал</td>
+                            <td>9 г</td>
+                            <td>4 г</td>
+                            <td>2%</td>
+                            <td>Отлично</td>
+                        </tr>
+
+                        <tr>
+                            <td>Питьевой</td>
+                            <td>95 ккал</td>
+                            <td>3 г</td>
+                            <td>12 г</td>
+                            <td>1.5%</td>
+                            <td>Нормально</td>
+                        </tr>
+
+                        <tr>
+                            <td>Безлактозный</td>
+                            <td>85 ккал</td>
+                            <td>4.2 г</td>
+                            <td>7 г</td>
+                            <td>2%</td>
+                            <td>Хорошо</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <button id="bestYogurtButton" class="compare_button">Показать самый полезный</button>
+
+            <p id="compareResult" class="compare_result"></p>
+
+            <a href="indexx.html" class="back_home">← Вернуться на главную</a>
+        </section>
+    </main>
+
+    <script src="java_scrip.js"></script>
+</body>
+</html>

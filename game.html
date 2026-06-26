@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Йогурт Игра</title>
+<link rel="stylesheet" href="css/main.css">
+<style>
+body{
+    margin:0;
+    background:#222831;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    font-family:Arial;
+}
+
+
+#counter{
+    font-size:48px;
+    margin-bottom:30px;
+}
+
+#yogurt{
+    width:250px;
+    cursor:pointer;
+    user-select:none;
+    transition:transform .2s;
+}
+
+#yogurt:hover{
+    transform:scale(1.05);
+}
+
+</style>
+</head>
+<body>
+
+<button id="backButton" onclick="window.location.href='indexx.html'">
+    ← На главную
+</button>
+
+<div id="counter">Открыто йогуртов: 0</div>
+
+<img id="yogurt" src="yogurt-closed.png" alt="Йогурт">
+
+<script>
+let count = 0;
+let canClick = true;
+
+const yogurt = document.getElementById("yogurt");
+const counter = document.getElementById("counter");
+
+yogurt.addEventListener("click", () => {
+    if (!canClick) return;
+
+    canClick = false;
+    count++;
+
+    counter.textContent = "Открыто йогуртов: " + count;
+
+    yogurt.src = "yogurt-open.png";
+
+    setTimeout(() => {
+        yogurt.src = "yogurt-closed.png";
+        canClick = true;
+    }, 1000);
+});
+</script>
+
+</body>
+</html>
